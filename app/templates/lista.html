@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<title>Lista de dados</title>
+</head>
+<body>
+    <h1>Lista de Dados Salvos</h1>
+    <table border=5>
+        <tr>
+            <td>ID</td>
+            <td>Usuario</td>
+            <td>senha</td>
+            <td>Nome</td>
+            <td>Email</td>
+        </tr>
+        {% for r in r %}
+        <tr>
+                <td>{{ r.id}}</td>
+                <td>{{ r.username}}</td>
+                <td>{{ r.password}}</td>
+                <td>{{ r.name}}</td>
+                <td>{{ r.email}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    
+</body>
+</html>

@@ -9,7 +9,22 @@ class User(db.Model):
     name = db.Column(db.String)
     email = db.Column(db.String, unique=True)
 
-    def __init__(self, username,password,name,email):
+    @property
+    def is_authenticated(self):
+        return True
+
+    @property 
+    def is_active(self):
+        return True
+
+    @property
+    def is_anonymous(self):
+        return False
+
+    def get_id(self):
+        return str(self.id)   
+
+    def __init__(self, username, password, name, email):
         self.username = username
         self.password = password
         self.name = name
@@ -25,7 +40,7 @@ class Post(db.Model):
     content = db.Column(db.Text)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
 
-    user = db.relationship('User', foreign_key=user_id)
+    user = db.relationship('User', foreign_keys=user_id)
 
     def __init__(self, content, user_id):
         self.content = content
@@ -42,4 +57,4 @@ class Follow(db.Model):
     follower_id = db.Column(db.Integer, db.ForeignKey('users.id'))
 
     user = db.relationship('User', foreign_keys=user_id)
-    follower = db.ralationship('User', foreign_keys=follower_id)
+    follower = db.relationship('User', foreign_keys=follower_id)
