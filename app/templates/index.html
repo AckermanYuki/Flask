@@ -1,19 +1,64 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<form class="form-signin">
-    <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-    <h1 class="h3 mb-3 font-weight-normal">Por favor, faça o login</h1>
-    <label for="inputEmail" class="sr-only">Email address</label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-    <label for="inputPassword" class="sr-only">Password</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-    <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember me
-      </label>
-    </div>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-  </form>
+  
+    <div class="container" id="tx1">
+      A&P-IFCE, no caso Achados e Perdidos do IFCE, é um 
+      site desenvolvido pelo instituto, mais especificamente
+       por alunos do LASIC - Laboratorio de Software e Internet das Coisas,
+        com o intuito de ajudar todos os 
+      integrantes do IFCE Campus Canindé, a ter uma melhor 
+      procura de objetos ou de outras coisas que venham a perder 
+      dentro do campus. Esse site é designado para todos que venham a utilizar o campus, 
+      até para pessoas que participam de eventos que são realizados dentro do instituto.
 
-  {% endblock %}
+      <img src="https://live.staticflickr.com/65535/48070076381_11b6bece4c_m.jpg" id="logolasic">
+    </div>
+    <div class="container" id="tx2">
+        IFCE O Instituto Federal de Educação, Ciência e 
+        Tecnologia do Ceará (IFCE), cuja reitoria é sediada 
+        em Fortaleza, instituição criada nos termos da Lei. N 
+        º 11.892, de 29 de dezembro de 2008, mediante a integração
+        do Centro Federal de Educação Tecnológica do Ceará com as 
+        Escolas Agrotécnicas Federais de Crato e de Iguatu, vinculado
+        ao Ministério da Educação, é uma autarquia de natureza jurídica,
+        detentora de autonomia administrativa, patrimonial, financeira,
+        didático-pedagógica e disciplinar. Para efeito da incidência das
+        disposições que regem a regulação, avaliação e supervisão da 
+        instituição e dos cursos de educação superior, o IFCE é equiparado
+        às universidades federais.
+    </div>
+    <div style="width:40%">
+<style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  </style>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+            <img src="https://live.staticflickr.com/65535/48070343428_0641553f8d.jpg"/> 
+    </div>
+    <div class="carousel-item">
+      <img src="https://live.staticflickr.com/65535/48070329636_469fb7c888.jpg" /> 
+    </div>
+    <div class="carousel-item">
+      <img src="https://live.staticflickr.com/65535/48070343428_0641553f8d.jpg"/> 
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div></div>
+{% endblock %}

@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="pt-br" class="h-100">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="icon" href="https://live.staticflickr.com/65535/48070343428_0641553f8d.jpg">
 
     <title>A&P-IF</title>
 
@@ -22,33 +22,43 @@
   </head>
 
   <body class="d-flex flex-column h-100">
-
+<!--    <img class="mb-4" src="https://imagizer.imageshack.com/img923/1562/fUpiDt.png" alt="" width="60%" height="20%">-->
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Navbar fixa</a>
+        <a href="https://ifce.edu.br/caninde"><img id="logo"src="https://live.staticflickr.com/65535/48069719291_59d59c08aa_t.jpg"/> </a>
+        <a class="navbar-brand" href="#">A&P-IF </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(atual)</span></a>
+              <a class="nav-link" href="{{url_for('login') }}">Perdidos</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{{url_for('login') }}">Achados</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Contatos</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Sobre</a>
             </li>
             {% if current_user.is_authenticated %}
             <li class="nav-item active">
                 <a class="nav-link" href="{{url_for('logout') }}">Logout</a>
-              </li>
+            </li>
+            </ul>
+              <form class="form-inline mt-2 mt-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Pesquisa" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+              </form>
             {% else %}
+        </div>
             <li class="nav-item active">
                 <a class="nav-link" href="{{url_for('login') }}">Login</a>
-              </li>
+            </li>
             {% endif %}
-          </ul>
-          <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Pesquisa" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-          </form>
-        </div>
       </nav>
     </header>
 
@@ -66,12 +76,6 @@
 
         {% block content %}
           {% endblock %}
-    
-    <footer class="footer mt-auto py-3">
-      <div class="container">
-        <span class="text-muted">Coloque o conteúdo do sticky footer aqui.</span>
-      </div>
-    </footer>
 
     <!-- Principal JavaScript do Bootstrap
     ================================================== -->
@@ -80,6 +84,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    
+
   </body>
 </html>

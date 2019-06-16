@@ -12,8 +12,8 @@ body {
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
-  padding-top: 60px;
-  padding-bottom: 40px;
+  padding-top: 100px;
+  padding-bottom:40px;
   background-color: dimgray;
 }
 
@@ -30,7 +30,7 @@ body {
   position: relative;
   box-sizing: border-box;
   height: auto;
-  padding: 10px;
+  padding: 0px;
   font-size: 16px;
 }
 .form-signin .form-control:focus {
@@ -45,4 +45,41 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+
+/*Abaixo css da pagina do index*/
+#logo{
+  position: relative;
+  left: -8px;
+  top: 0px;
+  width: 50px;
+  height: 65px;
+}
+a:hover{
+  background: darkgreen;
+  border-radius: 10%;
+  text-decoration: underline;
+	text-decoration: underline overline; 
+	color:#f00;
+}
+#tx1{
+  position: absolute;
+  width: 20%;
+  color: black;
+  left: 10px;
+  top: 100px;
+}
+#tx2{
+  position: absolute;
+  width: 20%;
+  color: black;
+  left: 79%;
+  top: 100px;
+}
+#logolasic{
+  position: relative;
+  border-radius: 4%;
+  left: -10px;
+  top: 10px;
 }
