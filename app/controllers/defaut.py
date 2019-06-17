@@ -1,4 +1,4 @@
-from flask import render_template, flash, redirect, url_for
+from flask import render_template, flash, request,redirect, url_for
 from flask_login import login_user, logout_user
 from app import app, db, lm
 
@@ -22,25 +22,33 @@ def login():
         user = User.query.filter_by(username=form.username.data).first()
         if user and user.password == form.password.data:
             login_user(user)
-            flash("Login aceito.")
             return redirect(url_for("index"))
-    else:
-        flash("Login invalido.")
+        else:
+            flash("Login invalido, Tente novamente.")
     return render_template('login.html', form=form)
+
+@app.route("/cadastro", methods=["GET","POST"])
+def cadastro():
+    if request.method == "POST":
+        username = request.form.get("username")
+        password = request.form.get("senha")
+        name = request.form.get("name")
+        email = request.form.get("email")
+        cpf = request.form.get("cpf")
+        telefone = request.form.get("telefone")
+        
+        if username and password and name and email and cpf and telefone:
+            cad = User(username, password, name, email, cpf, telefone)
+            db.session.add(cad)
+            db.session.commit()  
+        return redirect(url_for("login"))
+    else:
+        return render_template('cadastro.html')
 
 @app.route("/logout")
 def logout():
     logout_user()
-    return redirect(url_for("index"))
-
-
-@app.route("/teste/<info>")
-@app.route("/teste", defaults={"info":None})
-def teste(info):
-    i = User ("adan1iel", "1234", "aDan1iel Silva", "ad1anielgsn99@gmail.com")
-    db.session.add(i)
-    db.session.commit()
-    return "ok"
+    return redirect(url_for("login"))
 
 @app.route("/teste1")
 def teste1():
