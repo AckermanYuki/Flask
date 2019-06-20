@@ -1,5 +1,6 @@
 body {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
-  padding-top: 110px;
+  padding-top: 105px;
   padding-bottom:40px;
   background-color: dimgray;
 }
@@ -51,7 +52,7 @@ body {
   width: 42%;
   border-radius: 2%;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   padding: 25px;
   font-family: New Century Schoolbook, TeX Gyre Schola, serif;
 }
@@ -65,8 +66,8 @@ input:hover{
   position: relative;
   left: -8px;
   top: 0px;
-  width: 50px;
-  height: 65px;
+  width: 35px;
+  height: 50px;
 }
 #colhover:hover{
   background: limegreen;
@@ -80,6 +81,7 @@ input:hover{
   color: black;
   left: 10px;
   top: 100px;
+  font-size: 14px;
 }
 #tx2{
   position: absolute;
@@ -87,10 +89,17 @@ input:hover{
   color: black;
   left: 79%;
   top: 100px;
+  font-size: 14px;
 }
-#logolasic{
-  position: relative;
-  border-radius: 4%;
-  left: -10px;
-  top: 10px;
+/*
+#roda{
+position: absolute;
+background: #242424;
+top: 730px;
+text-align: center;
+color: green;
+height: 70px;
+width: 100%;
+left: 0px;
 }
+*/

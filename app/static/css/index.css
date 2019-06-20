@@ -1,0 +1,51 @@
+body
+{
+    background: dimgray;
+    padding-top: 100px;
+}
+.con1{
+    min-height: 500px;
+    font-size: 13px; 
+}
+.con2{
+    max-width: 100%;
+    border: solid oldlace 2px;
+}
+.a1{
+    border: solid 2px rgb(39, 0, 78);
+    border-radius: 5%;
+}
+.a2{
+    border: solid 2px rgb(39, 0, 78);
+    border-radius: 5%;
+}
+.a3{
+    border: solid 2px rgb(39, 0, 78);
+    border-radius: 5%;
+}
+#logolasic{
+    border-radius: 4%;
+    height: 135px;
+    width: 135px;
+    align-items: center;
+  }
+#carrol{
+    width:65%;
+    border-radius: 2%;
+}
+#carrol:hover{
+    border-radius: 20%;
+    transition: 2s;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+#footer{
+    border-top: 1px solid #333;
+    bottom: 0px;
+    left: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+}

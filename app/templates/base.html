@@ -2,31 +2,21 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="https://live.staticflickr.com/65535/48070343428_0641553f8d.jpg">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <title>A&P-IF</title>
 
     <!-- Principal CSS do Bootstrap -->
-    <link rel="stylesheet" href="{{ url_for('static',
-    filename="css/bootstrap.min.css" ) }}">
-
-    <!-- Estilos customizados para esse template -->
-    <link href="sticky-footer-navbar.css" rel="stylesheet">
- 
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/bootstrap.min.css" ) }}">
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="{{ url_for('static',
-    filename="css/login.css" ) }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/login.css" ) }}">
   </head>
 
-  <body class="d-flex flex-column h-100">
+  <body>
 <!--    <img class="mb-4" src="https://imagizer.imageshack.com/img923/1562/fUpiDt.png" alt="" width="60%" height="20%">-->
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a href="https://ifce.edu.br/caninde"><img id="logo"src="https://live.staticflickr.com/65535/48069719291_59d59c08aa_t.jpg"/> </a>
-        <a class="navbar-brand" href="#" id="colhover">A&P-IF </a>
+        <a class="navbar-brand" href="{{ url_for('index') }}" id="colhover">A&P-IF </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -77,8 +67,12 @@
 
         {% block content %}
           {% endblock %}
-
-    <!-- Principal JavaScript do Bootstrap
+<!-- Principal JavaScript do Bootstrap
+          <div id="roda">
+      <img src="https://live.staticflickr.com/65535/48084679616_b92f6a4314_s.jpg" style="position: relative; width: 40px; height:40px; top: 10px; left: 0px;">
+      <img src="https://live.staticflickr.com/65535/48084774517_97c1cbff2a_s.jpg" style="position: relative; width: 40px; height: 40px; top: 10px; left: 30px;  ">
+    </div>
+    
     ================================================== -->
     <!-- Foi colocado no final para a página carregar mais rápido -->
     <script src="{{ url_for('static', filename="js/bootstrap.min.js") }}"></script>
