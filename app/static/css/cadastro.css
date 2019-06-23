@@ -1,0 +1,18 @@
+body
+{
+    background: dimgray;
+    padding-top: 100px;
+    color: black;
+}
+.cont4{
+    border: 2px solid;
+    border-radius: 2%;  
+}
+#formcad{
+background: lightgray;
+  width: 30%;
+  border-radius: 2%;
+  font-size: 20px;
+  padding: 35px;
+  font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+}

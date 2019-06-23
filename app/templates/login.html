@@ -1,22 +1,20 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div ></div>
-<form action="" method="POST" id="formulario" class="container">
+
+<form action="" method="POST" id="formulario" class="container con3 col col-sm-12 col-md-6 col-lg-4">
+    <div class="row">
     {{ form.csrf_token }}
-    <h2>Por favor, faça o login</h2>
-    <div class="form-group">
-        <label >Número da matrícula ou email</label>
-        {{ form.username(class="form-control", placeholder="Sua matrícula")}}
-        {% if form.errors.username %}
-            <div class="alert alert-danger" role="alert">
-                    {{ form.errors.username }}
-            </div>
-        {% endif %}
+    <center>
+        <h2>Por favor, faça o login</h2>
+    </center>
+    <div class="form-group col col-sm-12 col-md-6 col-lg-12">
+        <label >Usuário:</label>
+        {{ form.username(class="form-control", placeholder="Digite seu usuário")}}
     </div>
-    <div class="form-group">
-        <label>Senha</label>
-        {{ form.password(class="form-control", placeholder="Sua senha") }}
+    <div class="form-group col- col-sm-12 col-md-6 col-lg-12">
+        <label>Senha:</label>
+        {{ form.password(class="form-control", placeholder="Digite sua senha") }}
         {% if form.errors.password %}
             <div class="alert alert-danger" role="alert">
                 {{ form.errors.password }}
@@ -28,8 +26,9 @@
         {{ form.remember_me }}  Lembre-me
         </label>
     </div>
-    <button class="btn btn-lg btn-success btn-block" type="submit">Sign in</button>
+    <button class="btn btn-lg btn-success btn-block col- col-sm-12 col-md-6 col-lg-12" type="submit">Sign in</button>
+    </div>
 </form>
-</div>
+
     
 {% endblock %}

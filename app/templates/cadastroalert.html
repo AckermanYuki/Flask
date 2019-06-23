@@ -1,6 +1,15 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+    $('#exemplomodal').modal('show');
+});
+</script>
+
 <link rel="stylesheet" href="{{ url_for('static', filename="css/bootstrap.min.css" ) }}">
 <!-- Custom styles for this template -->
 <link rel="stylesheet" href="{{ url_for('static', filename="css/cadastro.css" ) }}">
@@ -72,6 +81,26 @@
                   <center>
                   <button class="btn btn-lg btn-success btn-block col col-sm-12 col-md-6 col-lg-8" type="submit">Cadastrar</button>
                   </center>
-</form>
+    </form>
+    
+
+<div class="modal fade" id="exemplomodal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">Alerta</h4>
+            </div>
+            <div class="modal-body">
+                O seu usuário ou email ou CPF ou telefone já estão registrados em nosso sistema, por favor verifique seus dados e troque seu nome de usuário.             </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+   
+   
+
 
 {% endblock %}

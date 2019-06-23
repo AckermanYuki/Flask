@@ -2,25 +2,22 @@ body
 {
     background: dimgray;
     padding-top: 100px;
+    color: black;
 }
 .con1{
-    min-height: 500px;
     font-size: 13px; 
 }
-.con2{
-    max-width: 100%;
-    border: solid oldlace 2px;
-}
+
 .a1{
-    border: solid 2px rgb(39, 0, 78);
+    border: solid 1px rgb(39, 0, 78);
     border-radius: 5%;
 }
 .a2{
-    border: solid 2px rgb(39, 0, 78);
+    border: solid 2px black;
     border-radius: 5%;
 }
 .a3{
-    border: solid 2px rgb(39, 0, 78);
+    border: solid 1px rgb(39, 0, 78);
     border-radius: 5%;
 }
 #logolasic{
@@ -48,4 +45,14 @@ body
     height: 40px;
     position: fixed;
     width: 100%;
+}
+#icon1{
+    position: relative;
+    left: 45%;
+    top: -26px;
+}
+#icon2{
+    position: relative;
+    left: 46%;
+    top: -26px;
 }
