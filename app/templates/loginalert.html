@@ -10,7 +10,7 @@ $(window).load(function() {
 </script>
 
 <form action="" method="POST" id="formulario" class="container con3 col col-sm-12 col-md-6 col-lg-4">
-    <div class="row">
+    <div class="row" style="margin-top: 140px;">
     {{ form.csrf_token }}
     <center>
         <h2>Por favor, faça o login</h2>
@@ -29,6 +29,7 @@ $(window).load(function() {
     </div>
     <div class="checkbox">
         <label>
+        <a href="{{url_for('cadastro')}}">Cadastre-se agora</a><br>
         {{ form.remember_me }}  Lembre-me
         </label>
     </div>
