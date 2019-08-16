@@ -1,0 +1,196 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <link rel="stylesheet" href="{{ url_for('static', filename="css/bootstrap.min.css" ) }}">
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="{{ url_for('static', filename="css/index.css" ) }}">
+    <div class="container con1 col col-sm-12 col-md-6 col-lg-11">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-6 col-lg-2 a1">
+          A&P-IFCE, no caso Achados e Perdidos do IFCE, é um 
+          site desenvolvido pelo instituto, mais especificamente
+          por alunos do LASIC - Laboratorio de Software e Internet das Coisas,
+          com o intuito de ajudar todos os 
+          integrantes do IFCE Campus Canindé, a ter uma melhor 
+          procura de objetos ou de outras coisas que venham a perder 
+          dentro do campus. Esse site é designado para todos que venham a utilizar o campus, 
+          até para pessoas que participam de eventos que são realizados dentro do instituto.
+         <center>
+          <img src="https://live.staticflickr.com/65535/48070076381_11b6bece4c_m.jpg" id="logolasic">
+          </center>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-0 col-lg-8 a2">
+        <center>  
+          <div>
+            <div id="demo" class="carousel slide" data-ride="carousel">
+              <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+              </ul>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://live.staticflickr.com/65535/48070343428_0641553f8d.jpg" id="carrol"/> 
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://live.staticflickr.com/65535/48070329636_469fb7c888.jpg" id="carrol"/> 
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://live.staticflickr.com/65535/48070343428_0641553f8d.jpg" id="carrol"/> 
+                  </div>
+                </div>
+              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+          </div>
+        </center>
+        </div>  
+      <div class="col-xs-12 col-sm-3 col-md-6 col-lg-2 a3">
+      IFCE O Instituto Federal de Educação, Ciência e 
+      Tecnologia do Ceará (IFCE), cuja reitoria é sediada 
+      em Fortaleza, instituição criada nos termos da Lei. N 
+      º 11.892, de 29 de dezembro de 2008, mediante a integração
+      do Centro Federal de Educação Tecnológica do Ceará com as 
+      Escolas Agrotécnicas Federais de Crato e de Iguatu, vinculado
+      ao Ministério da Educação, é uma autarquia de natureza jurídica,
+      detentora de autonomia administrativa, patrimonial, financeira,
+      didático-pedagógica e disciplinar.
+      </div>
+      </div>
+      <div class="row">
+          <div class="col-xs-12 col-sm-3 col-md-6 col-lg-2 a1">
+            A&P-IFCE, no caso Achados e Perdidos do IFCE, é um 
+            site desenvolvido pelo instituto, mais especificamente
+            por alunos do LASIC - Laboratorio de Software e Internet das Coisas,
+            com o intuito de ajudar todos os 
+            integrantes do IFCE Campus Canindé, a ter uma melhor 
+            procura de objetos ou de outras coisas que venham a perder 
+            dentro do campus. Esse site é designado para todos que venham a utilizar o campus, 
+            até para pessoas que participam de eventos que são realizados dentro do instituto.
+          </div>
+        </div>
+      <div class="row">
+        <div id="footer">
+            <label>
+                Contato: https://ifce.edu.br/caninde
+              </label>
+          <div class="col col-sm-12 col-md-6 col-lg-12">
+            <img src="https://live.staticflickr.com/65535/48084679616_b92f6a4314_s.jpg" width="35px" height="35px" id="icon1"/> 
+            <img src="https://live.staticflickr.com/65535/48084774517_97c1cbff2a_s.jpg" width="35px" height="35px"/ id="icon2"> 
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+  <div class="container" id="tx1">
+      <table border="1" class="container" class="table-round-corner" cellspacing="0">
+        <tr>
+          <td>
+            A&P-IFCE, no caso Achados e Perdidos do IFCE, é um 
+            site desenvolvido pelo instituto, mais especificamente
+            por alunos do LASIC - Laboratorio de Software e Internet das Coisas,
+              com o intuito de ajudar todos os 
+            integrantes do IFCE Campus Canindé, a ter uma melhor 
+            procura de objetos ou de outras coisas que venham a perder 
+            dentro do campus. Esse site é designado para todos que venham a utilizar o campus, 
+            até para pessoas que participam de eventos que são realizados dentro do instituto.
+          </td>
+        </tr>
+      </table>
+      <img src="https://live.staticflickr.com/65535/48070076381_11b6bece4c_m.jpg" id="logolasic">
+    </div>
+    <div class="scroll">
+    <div class="container" id="tx2">
+      <table border="1" class="table-round-corner" cellspacing="0">
+        <tr>
+          <td>
+            IFCE O Instituto Federal de Educação, Ciência e 
+            Tecnologia do Ceará (IFCE), cuja reitoria é sediada 
+            em Fortaleza, instituição criada nos termos da Lei. N 
+            º 11.892, de 29 de dezembro de 2008, mediante a integração
+            do Centro Federal de Educação Tecnológica do Ceará com as 
+            Escolas Agrotécnicas Federais de Crato e de Iguatu, vinculado
+            ao Ministério da Educação, é uma autarquia de natureza jurídica,
+            detentora de autonomia administrativa, patrimonial, financeira,
+            didático-pedagógica e disciplinar.
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+    <div style="width:40%">
+<style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+            <img src="https://live.staticflickr.com/65535/48070343428_0641553f8d.jpg"/> 
+    </div>
+    <div class="carousel-item">
+      <img src="https://live.staticflickr.com/65535/48070329636_469fb7c888.jpg" /> 
+    </div>
+    <div class="carousel-item">
+      <img src="https://live.staticflickr.com/65535/48070343428_0641553f8d.jpg"/> 
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div></div>
+-->

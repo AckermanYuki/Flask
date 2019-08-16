@@ -14,6 +14,9 @@ def load_user(id):
 def index():
     return render_template('index.html')
 
+@app.route("/perdidos")
+def perdidos():
+    return render_template('perdidos.html')
 
 @app.route("/login", methods=["GET","POST"])
 def login():

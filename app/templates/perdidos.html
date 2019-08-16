@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename="css/bootstrap.min.css" ) }}">
+<!-- Custom styles for this template -->
+<link rel="stylesheet" href="{{ url_for('static', filename="css/cadastro.css" ) }}">
+
+<form action="" method="POST">
+<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Cadastrar</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+            <i class="fas fa-user prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="orangeForm-name">Nome:</label>
+            <input type="text" id="orangeForm-name" class="form-control validate">
+            
+            <i class="fas fa-user prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="orangeForm-name">Telefone:</label>
+            <input type="text" id="orangeForm" class="form-control validate">
+            
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="orangeForm-email">Email:</label>
+            <input type="email" id="orangeForm-email" class="form-control validate">
+            
+            <i class="fas fa-lock prefix grey-text"></i>
+            <label data-error="wrong" data-success="right" for="orangeForm-pass">Tipo de objeto:</label>
+            <input type="password" id="orangeForm-pass" class="form-control validate">
+        </div>
+        <label data-error="wrong" data-success="right" for="orangeForm-text">Descrição:</label>
+        <div class="md-form mb-4">
+            <i class="fas fa-lock prefix grey-text"></i>
+            <textarea name="descri" rows="5" cols="33">
+            </textarea>
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="submit" class="btn btn-deep-orange">Cadastrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</form>
+<div class="text-center">
+  <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalRegisterForm">Cadastrar item perdido</a>
+</div>
+
+{% endblock %}
